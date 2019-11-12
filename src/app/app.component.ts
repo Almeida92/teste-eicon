@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FilmesService } from './shared/services/filmes.service';
+import ResponseFilmes from './shared/models/response-filmes.model';
 
 @Component({
   selector: 'app-root',
@@ -10,7 +11,9 @@ export class AppComponent implements OnInit {
   constructor(private filmesService: FilmesService) {}
 
   ngOnInit(): void {
-    this.filmesService.buscar('batman');
+    this.filmesService.buscar('batman').subscribe((result: ResponseFilmes) => {
+      console.log(result);
+    });
   }
 
   title = 'teste-eicon';
