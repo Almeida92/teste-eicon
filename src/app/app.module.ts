@@ -8,12 +8,16 @@ import { FilmesService } from './shared/services/filmes.service';
 import { HttpClientModule } from '@angular/common/http';
 import { HeaderComponent } from './shared/header/header.component';
 import { BuscadorComponent } from './shared/buscador/buscador.component';
+import { ListaFilmesComponent } from './shared/lista-filmes/lista-filmes.component';
+import { CardFilmesComponent } from './shared/lista-filmes/card-filmes/card-filmes.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    BuscadorComponent
+    BuscadorComponent,
+    ListaFilmesComponent,
+    CardFilmesComponent
   ],
   imports: [
     BrowserModule,

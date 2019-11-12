@@ -6,6 +6,7 @@ export const environment = {
   production: false,
   URL: 'https://api.themoviedb.org/3/search/movie',
   API_KEY : 'a2578d5ffae6c70c0824dceef1015c36',
+  URL_IMG: 'https://image.tmdb.org/t/p/w185_and_h278_bestv2'
 };
 
 /*
