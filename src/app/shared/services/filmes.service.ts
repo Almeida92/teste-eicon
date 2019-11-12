@@ -14,7 +14,6 @@ export class FilmesService {
   }
 
   buscar(query: String, page: number = 1): Observable<any> {
-    console.log(`${this.url}&language=pt-BR&query=${query}&page=${page}&include_adult=false`);
     return this.http.get(`${this.url}&language=pt-BR&query=${query}&page=${page}&include_adult=false`);
   }
 }

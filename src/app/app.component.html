@@ -1,9 +1,9 @@
-<app-header></app-header>
+<app-header (receberLista)="receberLista($event)" receberLista="receberLista"></app-header>
 <div class="container">
   <div class="jumbotron">
     <h1 class="display-4">Teste </h1>
     <p class="lead">Buscar informações sobre filmes </p>
   </div>
-  <app-lista-filmes></app-lista-filmes>
+  <app-lista-filmes [lista_filmes]="lista_filmes"></app-lista-filmes>
 </div>
 
