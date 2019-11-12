@@ -1,18 +1,18 @@
 <div class="card">
   <div class="card-header">
-    Nome Filme
+    {{ filme.title }}
   </div>
   <div class="card-body">
     <blockquote class="blockquote mb-0">
       <div class="row">
           <div class="col-2">
-              <img src="https://image.tmdb.org/t/p/w185_and_h278_bestv2/sYMAc4BLMHVAXmt7VSEnDM97Sy1.jpg" class="img-fluid" alt="Responsive image">
+              <img [src]="URL_IMG" class="img-fluid" alt="Responsive image">
           </div>
           <div class="col-10">
-              <p>Descrição.</p>
+              <p>{{ filme.overview }}</p>
           </div>
       </div>
-      <footer class="blockquote-footer"><cite title="Source Title">Data</cite></footer>
+      <footer class="blockquote-footer"><cite title="Source Title">{{ filme.release_date }}</cite></footer>
     </blockquote>
   </div>
 </div>
