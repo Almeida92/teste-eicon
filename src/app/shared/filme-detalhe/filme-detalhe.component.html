@@ -1,0 +1,24 @@
+<div class="modal-header">
+    <h4 class="modal-title">{{ filme.title }}</h4>
+    <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<div class="modal-body">
+    <div class="row">
+        <div class="col-4">
+            <img [src]="URL_IMG" class="img-fluid" alt="Responsive image">
+        </div>
+        <div class="col-8">
+            <div class="row">
+                <p>{{ filme.overview }}</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12"><p>{{ filme.release_date }}</p></div>
+    </div>
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="activeModal.close('Close click')">Fechar</button>
+</div>
